@@ -1,6 +1,6 @@
-from sample_config import Config as SampleConfig
+from auto_forwarder.sample_config import Config
 
-class Config(SampleConfig):
+class Development(Config):
     # Enable logging for debugging (True for development, False for production)
     LOGGER = True
 
