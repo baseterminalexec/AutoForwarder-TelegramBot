@@ -1,7 +1,7 @@
 import logging
 import os
 import sys
-
+from telegram.ext import ApplicationBuilder
 import telegram.ext as tg
 
 # enable logging
@@ -66,9 +66,10 @@ else:
     WORKERS = Config.WORKERS
 
 
-updater = tg.Updater(API_KEY)
+application = ApplicationBuilder().token(API_KEY).build()
 
-dispatcher = updater.dispatcher
+application.add_handler(...)  # this replaces dispatcher.add_handler
+application.run_polling()
 
 FROM_CHATS = list(FROM_CHATS)
 TO_CHATS = list(TO_CHATS)
