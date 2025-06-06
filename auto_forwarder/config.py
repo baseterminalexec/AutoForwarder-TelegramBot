@@ -24,4 +24,4 @@ class Development(Config):
     CERT_PATH = None        # SSL cert path if needed (mostly unused in basic bot hosting)
 
     # Number of workers for concurrent updates
-    WORKERS = 8
+    WORKERS = 4
