@@ -1,4 +1,4 @@
-from sample_config import Config as SampleConfig
+from config import Config as SampleConfig
 
 class Config(SampleConfig):
     # Enable logging for debugging (True for development, False for production)
