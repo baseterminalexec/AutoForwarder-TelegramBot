@@ -66,7 +66,7 @@ else:
     WORKERS = Config.WORKERS
 
 
-updater = tg.Updater(API_KEY, workers=WORKERS)
+updater = tg.Updater(API_KEY)
 
 dispatcher = updater.dispatcher
 
